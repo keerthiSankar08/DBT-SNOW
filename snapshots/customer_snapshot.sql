@@ -9,5 +9,5 @@
 }}
 SELECT CUSTOMER_ID,CUSTOMER_NAME,EMAIL,CITY,START_DATE FROM 
 {{ source('insurance_curated','DIM_CUSTOMER') }}
-
+WHERE IS_CURRENT='Y'
 {% endsnapshot %}
