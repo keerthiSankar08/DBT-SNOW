@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: insurance_curated
+    database: PC_DBT_DB
+    schema: CURATED
+    tables:
+      - name: DIM_CUSTOMER
+      - name: FACT_PREMIUM

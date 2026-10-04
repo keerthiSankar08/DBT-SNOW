@@ -1,0 +1,22 @@
+version: 2
+
+models:
+
+  - name: dim_customer_reporting
+
+    columns:
+
+      - name: CUSTOMER_ID
+
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_premium_reporting
+
+    columns:
+
+      - name: PREMIUM_AMOUNT
+
+        tests:
+          - not_null
